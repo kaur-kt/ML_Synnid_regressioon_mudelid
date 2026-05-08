@@ -1,0 +1,591 @@
+--- Main alustab ---
+--- Esimesed kirjed ---
+   Ema perekonnaseis kood  ...              Sünnitusviis
+0                       2  ...           Loomulikul teel
+1                       2  ...           Loomulikul teel
+2                       2  ...  Erakorraline keisrilõige
+3                       1  ...           Loomulikul teel
+4                       1  ...           Loomulikul teel
+
+[5 rows x 15 columns]
+--- Puuduvad andmed summeerituna tunnuste kaupa ---
+Ema perekonnaseis kood       0
+Ema perekonnaseis            0
+Suitsetamine kood            5
+Suitsetamine                 5
+Raseduskestus nädalad       17
+Raseduskestus päevad        13
+Ema vanus                    0
+Isa vanus                 1255
+Lapse sugu kood              0
+Lapse sugu                   0
+Sündinud laste arv           0
+Sünnikaal                    9
+Sünnipikkus                 33
+Sünnitusviis kood            0
+Sünnitusviis                 0
+dtype: int64
+--- Andmestiku info, tunnused, andmetüübid jm ---
+<class 'pandas.DataFrame'>
+RangeIndex: 48559 entries, 0 to 48558
+Data columns (total 15 columns):
+ #   Column                  Non-Null Count  Dtype
+---  ------                  --------------  -----
+ 0   Ema perekonnaseis kood  48559 non-null  int64
+ 1   Ema perekonnaseis       48559 non-null  str
+ 2   Suitsetamine kood       48554 non-null  float64
+ 3   Suitsetamine            48554 non-null  str
+ 4   Raseduskestus nädalad   48542 non-null  float64
+ 5   Raseduskestus päevad    48546 non-null  float64
+ 6   Ema vanus               48559 non-null  int64
+ 7   Isa vanus               47304 non-null  float64
+ 8   Lapse sugu kood         48559 non-null  int64
+ 9   Lapse sugu              48559 non-null  str
+ 10  Sündinud laste arv      48559 non-null  int64
+ 11  Sünnikaal               48550 non-null  float64
+ 12  Sünnipikkus             48526 non-null  float64
+ 13  Sünnitusviis kood       48559 non-null  int64
+ 14  Sünnitusviis            48559 non-null  str
+dtypes: float64(6), int64(5), str(4)
+memory usage: 5.6 MB
+None
+--- Puuduvate andmete kontroll peale eemaldamisi ---
+Ema perekonnaseis kood    0
+Ema perekonnaseis         0
+Suitsetamine kood         0
+Suitsetamine              0
+Raseduskestus nädalad     0
+Raseduskestus päevad      0
+Ema vanus                 0
+Isa vanus                 0
+Lapse sugu kood           0
+Lapse sugu                0
+Sündinud laste arv        0
+Sünnikaal                 0
+Sünnipikkus               0
+Sünnitusviis kood         0
+Sünnitusviis              0
+dtype: int64
+--- Teisendame ja täiendame andmestikku ---
+--- Paarikaupa hajuvusdiagrammid ---
+--- Korrelatasiooni maatriks ---
+--- Analüüs ---
+Kiire ülevaade:
+
+--- Ema perekonnaseis kood ---
+count    47262.000000
+mean         1.580868
+std          0.550499
+min          1.000000
+25%          1.000000
+50%          2.000000
+75%          2.000000
+max          9.000000
+Name: Ema perekonnaseis kood, dtype: float64
+Ema perekonnaseis kood
+2    26152
+1    20585
+3      405
+4       89
+9       25
+Name: count, dtype: int64
+
+--- Ema perekonnaseis ---
+count           47262
+unique              6
+top       vabaabielus
+freq            26152
+Name: Ema perekonnaseis, dtype: object
+Ema perekonnaseis
+vabaabielus               26152
+registreeritud abielus    20585
+vallaline                   405
+lahutatud                    89
+teadmata                     25
+Name: count, dtype: int64
+
+--- Suitsetamine kood ---
+count    47262.000000
+mean         1.152850
+std          0.552444
+min          1.000000
+25%          1.000000
+50%          1.000000
+75%          1.000000
+max          4.000000
+Name: Suitsetamine kood, dtype: float64
+Suitsetamine kood
+1.0    43499
+3.0     2079
+2.0      993
+4.0      691
+Name: count, dtype: int64
+
+--- Suitsetamine ---
+count              47262
+unique                 4
+top       ei suitsetanud
+freq               43499
+Name: Suitsetamine, dtype: object
+Suitsetamine
+ei suitsetanud                                       43499
+suitsetas                                             2079
+lõpetas suitsetamise raseduse esimesel trimestril      993
+andmed puuduvad                                        691
+Name: count, dtype: int64
+
+--- Raseduskestus nädalad ---
+count    47262.000000
+mean        39.173162
+std          1.807187
+min         22.000000
+25%         39.000000
+50%         39.000000
+75%         40.000000
+max         43.000000
+Name: Raseduskestus nädalad, dtype: float64
+Raseduskestus nädalad
+40.0    14152
+39.0    12956
+41.0     8364
+38.0     5908
+37.0     2707
+Name: count, dtype: int64
+
+--- Raseduskestus päevad ---
+count    47262.000000
+mean         2.884622
+std          2.022408
+min          0.000000
+25%          1.000000
+50%          3.000000
+75%          5.000000
+max          8.000000
+Name: Raseduskestus päevad, dtype: float64
+Raseduskestus päevad
+0.0    7547
+1.0    7263
+2.0    6846
+6.0    6438
+5.0    6436
+Name: count, dtype: int64
+
+--- Ema vanus ---
+count    47262.000000
+mean        31.186429
+std          5.359816
+min         14.000000
+25%         28.000000
+50%         31.000000
+75%         35.000000
+max         55.000000
+Name: Ema vanus, dtype: float64
+Ema vanus
+30    3551
+32    3546
+31    3542
+33    3246
+29    3154
+Name: count, dtype: int64
+
+--- Isa vanus ---
+count    47262.000000
+mean        33.950468
+std          6.299070
+min         14.000000
+25%         30.000000
+50%         33.000000
+75%         38.000000
+max         79.000000
+Name: Isa vanus, dtype: float64
+Isa vanus
+32.0    3471
+33.0    3468
+31.0    3326
+34.0    3119
+30.0    3045
+Name: count, dtype: int64
+
+--- Lapse sugu kood ---
+count    47262.000000
+mean         1.487622
+std          0.499852
+min          1.000000
+25%          1.000000
+50%          1.000000
+75%          2.000000
+max          2.000000
+Name: Lapse sugu kood, dtype: float64
+Lapse sugu kood
+1    24216
+2    23046
+Name: count, dtype: int64
+
+--- Lapse sugu ---
+count     47262
+unique        2
+top       poiss
+freq      24216
+Name: Lapse sugu, dtype: object
+Lapse sugu
+poiss     24216
+tüdruk    23046
+Name: count, dtype: int64
+
+--- Sündinud laste arv ---
+count    47262.000000
+mean         1.032098
+std          0.179591
+min          1.000000
+25%          1.000000
+50%          1.000000
+75%          1.000000
+max          3.000000
+Name: Sündinud laste arv, dtype: float64
+Sündinud laste arv
+1    45773
+2     1461
+3       28
+Name: count, dtype: int64
+
+--- Sünnikaal ---
+count    47262.000000
+mean      3528.657590
+std        554.797961
+min        410.000000
+25%       3234.000000
+50%       3564.000000
+75%       3880.000000
+max       6100.000000
+Name: Sünnikaal, dtype: float64
+Sünnikaal
+3600.0    253
+3620.0    216
+3440.0    216
+3720.0    216
+3520.0    212
+Name: count, dtype: int64
+
+--- Sünnipikkus ---
+count    47262.000000
+mean        50.866954
+std          2.696945
+min         21.000000
+25%         50.000000
+50%         51.000000
+75%         52.000000
+max         61.000000
+Name: Sünnipikkus, dtype: float64
+Sünnipikkus
+51.0    8909
+50.0    8285
+52.0    8024
+53.0    5665
+49.0    4761
+Name: count, dtype: int64
+
+--- Sünnitusviis kood ---
+count    47262.000000
+mean         1.843193
+std          1.529347
+min          1.000000
+25%          1.000000
+50%          1.000000
+75%          2.000000
+max          7.000000
+Name: Sünnitusviis kood, dtype: float64
+Sünnitusviis kood
+1    34698
+5     6692
+4     3062
+2     2543
+6      220
+Name: count, dtype: int64
+
+--- Sünnitusviis ---
+count               47262
+unique                  7
+top       Loomulikul teel
+freq                34698
+Name: Sünnitusviis, dtype: object
+Sünnitusviis
+Loomulikul teel             34698
+Erakorraline keisrilõige     6692
+Plaaniline keisrilõige       3062
+Vaakumsünnitus               2543
+Hädakeisrilõige               220
+Name: count, dtype: int64
+
+--- Raseduskestus päevades ---
+count    47262.000000
+mean       277.096758
+std         12.557939
+min        154.000000
+25%        273.000000
+50%        279.000000
+75%        285.000000
+max        304.000000
+Name: Raseduskestus päevades, dtype: float64
+Raseduskestus päevades
+280.0    2313
+281.0    2229
+282.0    2121
+283.0    1962
+279.0    1956
+Name: count, dtype: int64
+
+--- Vanusevahe ---
+count    47262.000000
+mean         2.764039
+std          4.811529
+min        -23.000000
+25%          0.000000
+50%          2.000000
+75%          5.000000
+max         42.000000
+Name: Vanusevahe, dtype: float64
+Vanusevahe
+1.0    5663
+0.0    5318
+2.0    5117
+3.0    4442
+4.0    3765
+Name: count, dtype: int64
+
+--- Loomulik sünnitus ---
+count    47262.000000
+mean         0.734163
+std          0.441783
+min          0.000000
+25%          0.000000
+50%          1.000000
+75%          1.000000
+max          1.000000
+Name: Loomulik sünnitus, dtype: float64
+Loomulik sünnitus
+1    34698
+0    12564
+Name: count, dtype: int64
+
+--- Suitsetamine kokku ---
+count               47262
+unique                  2
+top       Mittesuitsetaja
+freq                44190
+Name: Suitsetamine kokku, dtype: object
+Suitsetamine kokku
+Mittesuitsetaja    44190
+Suitsetaja          3072
+Name: count, dtype: int64
+Numbrilised tunnused:
+Raseduskestus päevades
+Miinimum: 154.0
+Maksimum: 304.0
+Keskmine: 277.096758495197
+Mediaan: 279.0
+Std: 12.55793920612058
+
+Ema vanus
+Miinimum: 14
+Maksimum: 55
+Keskmine: 31.186428843468324
+Mediaan: 31.0
+Std: 5.359815940068382
+
+Isa vanus
+Miinimum: 14.0
+Maksimum: 79.0
+Keskmine: 33.950467606110614
+Mediaan: 33.0
+Std: 6.2990695266848915
+
+Sünnikaal
+Miinimum: 410.0
+Maksimum: 6100.0
+Keskmine: 3528.6575896068725
+Mediaan: 3564.0
+Std: 554.7979608653475
+
+Sünnipikkus
+Miinimum: 21.0
+Maksimum: 61.0
+Keskmine: 50.8669544242732
+Mediaan: 51.0
+Std: 2.696944776592166
+
+Sündinud laste arv
+Miinimum: 1
+Maksimum: 3
+Keskmine: 1.032097668317041
+Mediaan: 1.0
+Std: 0.17959113201150007
+
+Vanusevahe
+Miinimum: -23.0
+Maksimum: 42.0
+Keskmine: 2.7640387626422918
+Mediaan: 2.0
+Std: 4.8115291464142125
+
+Kategoorilised tunnused:
+
+Ema perekonnaseis
+Ema perekonnaseis
+vabaabielus               26152
+registreeritud abielus    20585
+vallaline                   405
+lahutatud                    89
+teadmata                     25
+lesk                          6
+Name: count, dtype: int64
+
+Suitsetamine kokku
+Suitsetamine kokku
+Mittesuitsetaja    44190
+Suitsetaja          3072
+Name: count, dtype: int64
+
+Lapse sugu
+Lapse sugu
+poiss     24216
+tüdruk    23046
+Name: count, dtype: int64
+
+Sünnitusviis
+Sünnitusviis
+Loomulikul teel                                     34698
+Erakorraline keisrilõige                             6692
+Plaaniline keisrilõige                               3062
+Vaakumsünnitus                                       2543
+Hädakeisrilõige                                       220
+Keisrilõige pärast ebaõnnestunud vaakumsünnitust       40
+Tangsünnitus                                            7
+Name: count, dtype: int64
+--- graafik Raseduskestus päevades ---
+--- graafik Sünnikaal ja erindid ---
+--- boxplot Sünnikaal ja erindid ---
+--- boxplot Sünnipikkuse statistika ja erindid ---
+--- graafik Lapse sugu ---
+--- graafik Sünnitusviis ---
+--- graafik Raseduskestus ja sünnikaal ---
+--- graafik Sünnikaalu sõltuvus kestusest trendina ---
+--- boxplot Sünnikaalu sõltuvus suitsetamisest ---
+--- graafik Sünnikaalu sõltuvus suitsetamisest ---
+--- boxplot Sünnikaalu ja sünnitusviisi vaheline suhe ---
+--- Random Forest meetodiga mudeli koostamine ja treenimine ---
+   Ema perekonnaseis kood  ... Suitsetamine kokku
+0                       2  ...    Mittesuitsetaja
+1                       2  ...    Mittesuitsetaja
+2                       2  ...    Mittesuitsetaja
+4                       1  ...    Mittesuitsetaja
+5                       2  ...    Mittesuitsetaja
+
+[5 rows x 19 columns]
+       Ema perekonnaseis kood  ... Suitsetamine kokku
+0                           2  ...    Mittesuitsetaja
+1                           2  ...    Mittesuitsetaja
+2                           2  ...    Mittesuitsetaja
+4                           1  ...    Mittesuitsetaja
+5                           2  ...    Mittesuitsetaja
+...                       ...  ...                ...
+48553                       1  ...    Mittesuitsetaja
+48554                       1  ...    Mittesuitsetaja
+48555                       2  ...    Mittesuitsetaja
+48557                       1  ...    Mittesuitsetaja
+48558                       2  ...    Mittesuitsetaja
+
+[47262 rows x 17 columns]
+Random Forest
+Kaal RMSE: 466.50
+Pikkus RMSE: 2.16
+Kaal R2: 0.302
+Pikkus R2: 0.380
+--- Random Forest meetodiga ennustame sünnikaalu ja sünnipikkust ---
+Sünnikaal (prognoos): 3092.8433333333332
+Sünnipikkus (prognoos): 49.5
+--- Random Forest meetodiga ennustame sünnikaalu ja sünnipikkust ---
+Sünnikaal (prognoos): 638.16
+Sünnipikkus (prognoos): 32.64
+Sünnikaal (prognoos): 732.2
+Sünnipikkus (prognoos): 32.64
+Sünnikaal (prognoos): 720.43
+Sünnipikkus (prognoos): 32.1
+Sünnikaal (prognoos): 1015.97
+Sünnipikkus (prognoos): 35.64
+Sünnikaal (prognoos): 986.93
+Sünnipikkus (prognoos): 35.87
+Sünnikaal (prognoos): 1161.85
+Sünnipikkus (prognoos): 37.12
+Sünnikaal (prognoos): 1251.31
+Sünnipikkus (prognoos): 37.92
+Sünnikaal (prognoos): 1259.24
+Sünnipikkus (prognoos): 36.58
+Sünnikaal (prognoos): 1432.77
+Sünnipikkus (prognoos): 38.65
+Sünnikaal (prognoos): 1672.06
+Sünnipikkus (prognoos): 41.8
+Sünnikaal (prognoos): 1731.38
+Sünnipikkus (prognoos): 41.92
+Sünnikaal (prognoos): 2112.85
+Sünnipikkus (prognoos): 44.52
+Sünnikaal (prognoos): 2044.92
+Sünnipikkus (prognoos): 44.47
+Sünnikaal (prognoos): 2356.5
+Sünnipikkus (prognoos): 47.56
+Sünnikaal (prognoos): 2402.59
+Sünnipikkus (prognoos): 46.92
+Sünnikaal (prognoos): 2582.11
+Sünnipikkus (prognoos): 46.44
+Sünnikaal (prognoos): 3129.5
+Sünnipikkus (prognoos): 49.87
+Sünnikaal (prognoos): 3146.32
+Sünnipikkus (prognoos): 49.7
+Sünnikaal (prognoos): 3442.76
+Sünnipikkus (prognoos): 49.94
+Sünnikaal (prognoos): 3238.37
+Sünnipikkus (prognoos): 50.05
+Sünnikaal (prognoos): 3641.62
+Sünnipikkus (prognoos): 51.27
+Sünnikaal (prognoos): 3631.63
+Sünnipikkus (prognoos): 50.85
+Sünnikaal (prognoos): 3658.53
+Sünnipikkus (prognoos): 52.2
+Sünnikaal (prognoos): 3829.19
+Sünnipikkus (prognoos): 51.41
+Sünnikaal (prognoos): 3684.19
+Sünnipikkus (prognoos): 50.62
+--- Võrdleme treenitud mudeli poolt ennustatut reaalse andmestikuga (lisatud trendijoon) ---
+--- Gradient Boosting meetodiga mudeli koostamine ja treenimine ---
+[3396.54350701 3522.22984596 3678.00068884 ... 3785.50372042 3587.17898335
+ 3347.34513236]
+Gradient Boosting
+RMSE: 416.79
+R2: 0.443
+--- Gradient Boosting meetodiga ennustame sünnikaalu ---
+Sünnikaal (prognoos): 674.05
+Sünnikaal (prognoos): 825.29
+Sünnikaal (prognoos): 825.29
+Sünnikaal (prognoos): 951.11
+Sünnikaal (prognoos): 956.45
+Sünnikaal (prognoos): 1128.17
+Sünnikaal (prognoos): 1168.26
+Sünnikaal (prognoos): 1309.68
+Sünnikaal (prognoos): 1463.97
+Sünnikaal (prognoos): 1658.29
+Sünnikaal (prognoos): 1721.41
+Sünnikaal (prognoos): 1919.82
+Sünnikaal (prognoos): 2116.68
+Sünnikaal (prognoos): 2256.63
+Sünnikaal (prognoos): 2417.6
+Sünnikaal (prognoos): 2575.45
+Sünnikaal (prognoos): 2777.87
+Sünnikaal (prognoos): 2922.23
+Sünnikaal (prognoos): 3132.78
+Sünnikaal (prognoos): 3344.65
+Sünnikaal (prognoos): 3481.43
+Sünnikaal (prognoos): 3557.99
+Sünnikaal (prognoos): 3686.11
+Sünnikaal (prognoos): 3719.17
+Sünnikaal (prognoos): 3752.9
+--- Võrdleme treenitud mudeli poolt ennustatut reaalse andmestikuga (lisatud trendijoon) ---
+Press any key to continue . . .
