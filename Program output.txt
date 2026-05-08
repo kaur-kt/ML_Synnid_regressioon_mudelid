@@ -500,6 +500,7 @@ Kaal RMSE: 466.50
 Pikkus RMSE: 2.16
 Kaal R2: 0.302
 Pikkus R2: 0.380
+Kas käivitame Random Forest mudeli tuunimise? (J/E): e
 --- Random Forest meetodiga ennustame sünnikaalu ja sünnipikkust ---
 Sünnikaal (prognoos): 3092.8433333333332
 Sünnipikkus (prognoos): 49.5
@@ -588,4 +589,5 @@ Sünnikaal (prognoos): 3686.11
 Sünnikaal (prognoos): 3719.17
 Sünnikaal (prognoos): 3752.9
 --- Võrdleme treenitud mudeli poolt ennustatut reaalse andmestikuga (lisatud trendijoon) ---
+--- Main lõpetab ---
 Press any key to continue . . .
