@@ -249,8 +249,11 @@ def main():
     
     # Mudeli loomine ja käivitamine, RF
     pipeline, X_train, y_train, X_test, y_test, X = randomForestModel(df)
-    # Parameetrite tuunimine ja parima parameetritega mudeli leidmine
-    #best_model = tuneTheModel(pipeline, X_train, y_train, X_test, y_test, X) # kommenteerime hetkel välja
+
+    # Parameetrite tuunimine ja parima parameetritega RF mudeli leidmine, küsime enne kasutajalt luba
+    luba = input("Kas käivitame Random Forest mudeli tuunimise? (J/E): ")
+    if luba.upper() == "J":
+        best_model = tuneTheModel(pipeline, X_train, y_train, X_test, y_test, X) # kommenteerime hetkel välja
 
     #print(df.info())
     
@@ -269,7 +272,7 @@ def main():
     df_predicted_gb = predPregCurve_gb(pipeline_gb)
     compTrends(df, df_predicted_gb)
     
-
+    print("--- Main lõpetab ---")
 
 if __name__ == '__main__':
     main()

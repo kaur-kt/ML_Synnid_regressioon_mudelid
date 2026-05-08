@@ -63,7 +63,7 @@ def randomForestModel(df):
     # Loome mudeli, siin kasutame vräpperit, sisuliselt kaks mudelit ühes, et saada kahte väljundit, nb! sõltumatut väljundit
     model = MultiOutputRegressor(RandomForestRegressor(n_estimators=100, random_state=42))
 
-    # Koostame lõpliku ja täieliku toru
+    # Koostame lõpliku ja täieliku toru, elik mudeli
     pipeline = Pipeline([
         ("preprocessing", preprocessor),
         ("model", model)
