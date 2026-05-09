@@ -50,6 +50,11 @@ Keskmine sünnipikkus on 50,87 ja mediaan 51. Standardhälve on 2,70, jaotus on 
 
 ## Sündide andmed
 Keskmine raseduskestus on 277 ja mediaan 279 päeva. Standardhälve on 12,56, jaotus on normaalse lähedane, kuid veidi vasakule kaldu, millele viitab keskmisest suurem mediaan. Kvartiilidest 25% on 273 ja 75% on 285, ehk poolte raseduskestus jääb siia, suhteliselt kitsasse 12 päeva, vahemikku. Äärmustest, miinimum on 154 ja maksimum on 304.
+<p align="center">
+  <img src="images/Võrdlus, raseduskestus päevades.png" width="70%">
+  <br>
+  <em>Raseduskestus päevades</em>
+</p>
 
 ## Seoste uurimine.
 - Numbriliste väärtuste paarikaupa võrdlusgraafik.
@@ -112,6 +117,7 @@ Treenimisel kasutame valdavalt pipeline’i, kuna see:
 Treenitud mudelite testimiseks on kasutatud kahte profiili, mis on kõiges muus identsed, välja arvatud lapse sugu, ja mis kujutavad keskmiste lähedasi väärtuseid. Täpsemalt, profiilis kasutataud tunnused testimisel: Ema vanus 30a, Isa vanus 32a, Ema perekonnaseis – abielus, ema mittesuitsetaja. Test arvutab prognoosijoone alates (raseduskestus) 175 päevast kuni 300 päevani, 5 päevase hüppega, ja arvutab välja neile päevadele vastavad sünnikaalud.
 
 ## Random Forest meetod
+RF ennustusjoon võrreldes reaalsete andmetega
 <table>
   <tr>
     <td align="center">
@@ -134,6 +140,7 @@ Mudeli mõõdikud:
 - Pikkus R2: 0,380
 
 ## Gradient Boosting meetod
+GB ennustusjoon võrreldes reaalsete andmetega
 <table>
   <tr>
     <td align="center">
