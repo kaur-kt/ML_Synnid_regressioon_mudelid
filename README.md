@@ -67,6 +67,10 @@ Keskmine raseduskestus on 277 ja mediaan 279 päeva. Standardhälve on 12,56, ja
 
 ## Sünnistatistika.
 Sündide sooline jaotus:
+<p align="center">
+  <img src="images/Võrdlus, lapse sugu.png" width="70%">
+  <br>
+</p>
 
 Sünnitusviiside ja sünnikaalude suhted, mediaanväärtustega:
 <p align="center">
@@ -109,18 +113,49 @@ Treenimisel kasutame valdavalt pipeline’i, kuna see:
 Treenitud mudelite testimiseks on kasutatud kahte profiili, mis on kõiges muus identsed, välja arvatud lapse sugu, ja mis kujutavad keskmiste lähedasi väärtuseid. Täpsemalt, profiilis kasutataud tunnused testimisel: Ema vanus 30a, Isa vanus 32a, Ema perekonnaseis – abielus, ema mittesuitsetaja. Test arvutab prognoosijoone alates (raseduskestus) 175 päevast kuni 300 päevani, 5 päevase hüppega, ja arvutab välja neile päevadele vastavad sünnikaalud.
 
 ## Random Forest meetod
-<p align="center">
-  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, random forest.png" width="45%" />
-  <img src="images/Võrdlus, mudel vs pärisandmed, poiss, random forest.png" width="45%" />
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, random forest.png" width="500"/>
+      <br />
+      Sünnikaal, tüdruk
+    </td>
+    <td align="center">
+      <img src="images/Võrdlus, mudel vs pärisandmed, poiss, random forest.png" width="500"/>
+      <br />
+      Sünnikaal, poiss
+    </td>
+  </tr>
+</table>
+
+Mudeli mõõdikud:
+- Kaal RMSE: 466,50
+- Pikkus RMSE: 2,16
+- Kaal R2: 0,302
+- Pikkus R2: 0,380
 
 ## Gradient Boosting meetod
-<p align="center">
-  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, gradient boosting.png" width="45%" />
-  <img src="images/Võrdlus, mudel vs pärisandmed, poiss, gradient boost.png" width="45%" />
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, gradient boosting.png" width="500"/>
+      <br />
+      Sünnikaal, tüdruk
+    </td>
+    <td align="center">
+      <img src="images/Võrdlus, mudel vs pärisandmed, poiss, gradient boost.png" width="500"/>
+      <br />
+      Sünnikaal, poiss
+    </td>
+  </tr>
+</table>
+
+Mudeli mõõdikud:
+- Kaal (parim) RMSE: 424,27
+- Pikkus (parim) RMSE: 1,99
 
 ## Random Forest ja Gradient Boosting võrdlus
+Kui võrrelda RMSE’d, siis RF on kehvemate tulemustega 466,50 võrreldes GB 416,79. Samuti võrrelda kordajaid R2, RF puhul on see 0,302 ja GB puhul 0,443, mis on ka GB kasuks.
 ## Mudelite võrdluse tulemus ja hinnang.
 Loodud ja treenitud mudelite võrdluses selgub, et Gradient Boosting’ul põhinev mudel on siin  selgelt paremate omadustega ja minu eelistus langeb selle kasuks.
 ## Random Forest tulemuste parendamine/tuunimine.
@@ -131,6 +166,10 @@ Pilt muutub, kui me võrdleme mudeli prognoosimisvõimet reaalsete andmetega võ
   <br>
   <em>Graafikul tumepunasega märgitud alas mudel „hallutsineerib“ (sünnikaal, tüdruk)</em>
 </p>
+
+Mudeli mõõdikud:
+- RMSE: 416,79
+- R2: 0,443
 
 Siit joonistub välja selge probleem sünnikaalu ennustamisel lühemate rasedu##kestvuste juures. Kui pikemate raseduskestuste juures mudel üldistab paremini , kui tuunimata mudel, siis probleem on lühemate raseduskestuste korral. Graafikul tumepunasega märgitud alas mudel „hallutsioneerib“ ja sellist mudelit reaalsuses kasutada ei saa.
 ## Kokkuvõte.
