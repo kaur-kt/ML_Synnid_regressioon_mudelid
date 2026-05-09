@@ -95,14 +95,14 @@ Treenitud mudelite testimiseks on kasutatud kahte profiili, mis on kõiges muus 
 
 ## Random Forest meetod
 <p align="center">
-  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, random forest.png" width="45%" />
-  <img src="images/Võrdlus, mudel vs pärisandmed, poiss, random forest.png" width="45%" />
+  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, random forest.png" width="55%" />
+  <img src="images/Võrdlus, mudel vs pärisandmed, poiss, random forest.png" width="55%" />
 </p>
 
 ## Gradient Boosting meetod
 <p align="center">
-  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, gradient boosting.png" width="45%" />
-  <img src="images/Võrdlus, mudel vs pärisandmed, poiss, gradient boost.png" width="45%" />
+  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, gradient boosting.png" width="55%" />
+  <img src="images/Võrdlus, mudel vs pärisandmed, poiss, gradient boost.png" width="55%" />
 </p>
 
 ## Random Forest ja Gradient Boosting võrdlus
