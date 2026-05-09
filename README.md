@@ -94,13 +94,28 @@ Treenimisel kasutame valdavalt pipeline’i, kuna see:
 Treenitud mudelite testimiseks on kasutatud kahte profiili, mis on kõiges muus identsed, välja arvatud lapse sugu, ja mis kujutavad keskmiste lähedasi väärtuseid. Täpsemalt, profiilis kasutataud tunnused testimisel: Ema vanus 30a, Isa vanus 32a, Ema perekonnaseis – abielus, ema mittesuitsetaja. Test arvutab prognoosijoone alates (raseduskestus) 175 päevast kuni 300 päevani, 5 päevase hüppega, ja arvutab välja neile päevadele vastavad sünnikaalud.
 
 ## Random Forest meetod
+<p align="center">
+  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, random forest.png" width="45%" />
+  <img src="images/Võrdlus, mudel vs pärisandmed, poiss, random forest.png" width="45%" />
+</p>
+
 ## Gradient Boosting meetod
+<p align="center">
+  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, gradient boosting.png" width="45%" />
+  <img src="images/Võrdlus, mudel vs pärisandmed, poiss, gradient boost.png" width="45%" />
+</p>
+
 ## Random Forest ja Gradient Boosting võrdlus
 ## Mudelite võrdluse tulemus ja hinnang.
 Loodud ja treenitud mudelite võrdluses selgub, et Gradient Boosting’ul põhinev mudel on siin  selgelt paremate omadustega ja minu eelistus langeb selle kasuks.
 ## Random Forest tulemuste parendamine/tuunimine.
 Hea kogemus ja õppemoment. Proovisin Random Forest tulemust parandada ja kasutada tuunimist, ehk leida parim parameetrite konfiguratsioon. Toimingu tulemuseks on esmapilgul justkui parem RMSE nii sünnikaalu, kui pikkuse osas.
 Pilt muutub, kui me võrdleme mudeli prognoosimisvõimet reaalsete andmetega võrreldes.
+<p align="center">
+  <img src="images/Võrdlus, mudel vs pärisandmed, tüdruk, tuunitud random forest attention.png" width="70%">
+  <br>
+  <em>Graafikul tumepunasega märgitud alas mudel „hallutsineerib“ (sünnikaal, tüdruk)</em>
+</p>
 
 Siit joonistub välja selge probleem sünnikaalu ennustamisel lühemate rasedu##kestvuste juures. Kui pikemate raseduskestuste juures mudel üldistab paremini , kui tuunimata mudel, siis probleem on lühemate raseduskestuste korral. Graafikul tumepunasega märgitud alas mudel „hallutsioneerib“ ja sellist mudelit reaalsuses kasutada ei saa.
 ## Kokkuvõte.
