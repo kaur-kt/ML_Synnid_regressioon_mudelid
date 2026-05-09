@@ -64,7 +64,10 @@ Sünnitusviiside ja sünnikaalude suhted, mediaanväärtustega:
 ## Sünnikaalu sõltuvus suitsetamisest. Hüpoteesi tõestus.
 Sünnikaalu sõltuvus suitsetamisest tuleb andmestiku analüüsides kenasti välja. Kui võrrelda sünnikaalu mediaanväärtusi mittesuitsetajate ja suitsetajate puhul, siis mittesuitsetajatel on see 3570g ja suitsetajatel 3438g. Vahe 132g.
 Kui võrrelda keskmiseid sünnikaale, siis erinevus on veelgi suurem, keskmine sünnikaal mittesuitsetajatel on 3539g ja suitsetajatel 3387g. Vahe 152g. Seega hüpotees sai kinnituse.
-
+<p align="center">
+  <img src="images/Võrdlus, sünnikaalu sõltuvus suitsetamisest, mediaanid.png" width="45%" />
+  <img src="images/Võrdlus, sünnikaalu sõltuvus suitsetamisest, keskmised.png" width="45%" />
+</p>
 ## Masinõpe ja mudelite treenimine 
 Andmestikuga tutvumise järel langes otsus esmalt Random Forest(suvamets) kasuks. Hinnates Random Forestiga saavutatud tulemusi tekkis plaan treenida alternatiivne mudel, kasutades Gradient Boosting’ut(gradiendi võimendus), võrrelda mõlemat mudelit ja leida antud juhul parim.
 Treeningul kasutatavad tunnused.
