@@ -95,18 +95,18 @@ Kui võrrelda keskmiseid sünnikaale, siis erinevus on veelgi suurem, keskmine s
 Andmestikuga tutvumise järel langes otsus esmalt Random Forest(suvamets) kasuks. Hinnates Random Forestiga saavutatud tulemusi tekkis plaan treenida alternatiivne mudel, kasutades Gradient Boosting’ut(gradiendi võimendus), võrrelda mõlemat mudelit ja leida antud juhul parim.
 Treeningul kasutatavad tunnused.
 - numbrilised:
--- Raseduskestus päevades,
--- Ema vanus,
--- Isa vanus
+  - Raseduskestus päevades,
+  - Ema vanus,
+  - Isa vanus
 
 - kategoorilised:
--- Ema perekonnaseis,
--- Suitsetamine kokku
--- Lapse sugu
+  - Ema perekonnaseis,
+  - Suitsetamine kokku
+  - Lapse sugu
 
 - sihttunnus:
--- Sünnikaal
--- sünnipikkus
+  - Sünnikaal
+  - sünnipikkus
 
 Treenimisel kasutame valdavalt pipeline’i, kuna see:
 - Võimaldab käsitleda puuduvaid väärtusi automaatselt, imputeerime
@@ -114,7 +114,8 @@ Treenimisel kasutame valdavalt pipeline’i, kuna see:
 - Võimaldab mugavamalt numbrilisi väärtusi skaleerida, rakendame vastavat skaalerit
 - Töötab uute andmetega otse
 - Aitab vältida andmelekkeid
-Treenitud mudelite testimiseks on kasutatud kahte profiili, mis on kõiges muus identsed, välja arvatud lapse sugu, ja mis kujutavad keskmiste lähedasi väärtuseid. Täpsemalt, profiilis kasutataud tunnused testimisel: Ema vanus 30a, Isa vanus 32a, Ema perekonnaseis – abielus, ema mittesuitsetaja. Test arvutab prognoosijoone alates (raseduskestus) 175 päevast kuni 300 päevani, 5 päevase hüppega, ja arvutab välja neile päevadele vastavad sünnikaalud.
+
+Treenitud mudelite testimiseks on kasutatud kahte profiili, mis on kõiges muus identsed, välja arvatud lapse sugu, ja mis kujutavad keskmiste lähedasi väärtuseid. Täpsemalt, profiilis kasutataud tunnused testimisel: Ema vanus 30a, Isa vanus 32a, Ema perekonnaseis – abielus, ema mittesuitsetaja, ja siis ühele profiilile lisandub tüdruk, teisele poiss. Test arvutab prognoosijoone alates (raseduskestus) 175 päevast kuni 300 päevani, 5 päevase hüppega, ja arvutab välja neile päevadele vastavad sünnikaalud.
 
 ## Random Forest meetod
 RF ennustusjoon võrreldes reaalsete andmetega
