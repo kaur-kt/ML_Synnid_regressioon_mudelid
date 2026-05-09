@@ -18,6 +18,9 @@ Eesmärgiks on uurida ja teostada järgmised toimingud:
 - Luua lisaks üks või mitu alternatiivse meetodiga masinõppe mudelit ning võrrelda mudelid omavahel
 - Hüpotees: suitsetamine mõjutab keskmiselt sünnikaalu
 
+## Andmestik.
+Andmestik sisaldab algselt ja puhastamata kujul kokku 48559 kirjet, puhastatud andmestik sisaldab 47262 kirjet.
+
 ## Andmestiku struktuur
 
 Andmestruktuur koosneb järgmistest elementidest/väljadest:
@@ -37,9 +40,6 @@ Andmestruktuur koosneb järgmistest elementidest/väljadest:
 - sünniviis (kood) – kategooriline
 - sünniviis – kategooriline
 
-## Andmestik.
-Andmestik sisaldab algselt ja puhastamata kujul kokku 48559 kirjet, puhastatud andmestik sisaldab 47262 kirjet.
-
 ## Ema andmed
 Keskmine vanus on 31,2 ja mediaan 31 aastat. Standardhälve ligi 5,36 aastat, enamik emasid jäävad vahemikku 26 kuni 36 aastat. Kvartiilidest, 25% on 28 ja 75% 35 aastat.
 ## Isa andmed
@@ -53,12 +53,21 @@ Keskmine sünnipikkus on 50,87 ja mediaan 51. Standardhälve on 2,70, jaotus on 
 Keskmine raseduskestus on 277 ja mediaan 279 päeva. Standardhälve on 12,56, jaotus on normaalse lähedane, kuid veidi vasakule kaldu, millele viitab keskmisest suurem mediaan. Kvartiilidest 25% on 273 ja 75% on 285, ehk poolte raseduskestus jääb siia, suhteliselt kitsasse 12 päeva, vahemikku. Äärmustest, miinimum on 154 ja maksimum on 304.
 
 ## Seoste uurimine.
-- Numbrilised väärtuste paarikaupa võrdlusgraafik.
+- Numbriliste väärtuste paarikaupa võrdlusgraafik.
+<p align="center">
+  <img src="images/Võrdlus, numbriliste tunnuste paarikaupa seosed.png" width="70%">
+  <br>
+</p>
 
-- Tunnuste korrelatsioonid.
+- Tunnuste korrelatsioonid. Korrelatsioonimaatriks.
+<p align="center">
+  <img src="images/Võrdlus, korrelatsioon numbriliste suuruste vahel.png" width="70%">
+  <br>
+</p>
 
 ## Sünnistatistika.
 Sündide sooline jaotus:
+
 Sünnitusviiside ja sünnikaalude suhted, mediaanväärtustega:
 
 ## Sünnikaalu sõltuvus suitsetamisest. Hüpoteesi tõestus.
