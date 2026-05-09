@@ -158,8 +158,8 @@ GB ennustusjoon võrreldes reaalsete andmetega
 </table>
 
 Mudeli mõõdikud:
-- Kaal (parim) RMSE: 424,27
-- Pikkus (parim) RMSE: 1,99
+- RMSE: 416,79
+- R2: 0,443
 
 ## Random Forest ja Gradient Boosting võrdlus
 Kui võrrelda RMSE’d, siis RF on kehvemate tulemustega 466,50 võrreldes GB 416,79. Samuti võrrelda kordajaid R2, RF puhul on see 0,302 ja GB puhul 0,443, mis on ka GB kasuks.
@@ -175,8 +175,8 @@ Pilt muutub, kui me võrdleme mudeli prognoosimisvõimet reaalsete andmetega võ
 </p>
 
 Mudeli mõõdikud:
-- RMSE: 416,79
-- R2: 0,443
+- Kaal (parim) RMSE: 424,27
+- Pikkus (parim) RMSE: 1,99
 
 Siit joonistub välja selge probleem sünnikaalu ennustamisel lühemate raseduskestvuste juures. Kui pikemate raseduskestuste juures mudel üldistab paremini , kui tuunimata mudel, siis probleem on lühemate raseduskestuste korral. Graafikul tumepunasega märgitud alas mudel „hallutsioneerib“ ja sellist mudelit reaalsuses kasutada ei saa.
 ## Kokkuvõte.
