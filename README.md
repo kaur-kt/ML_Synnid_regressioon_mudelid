@@ -6,7 +6,7 @@ Antud töö on koostatud reaalsete andmete baasil andmetöötluse, -analüüsi j
 
 ## Andmestik
 
-Töös kasutatud sünniandmestik koosneb ligikaudu 4+ aasta andmetest, kust on eemaldatud kõik isikuandmed, ehk tegemist on anonüümitud andmega ja mis on Tervise Arengu Instituudi sisemiseks või volitatud kasutajatele kasutamiseks.
+Töös kasutatud sünniandmestik koosneb ligikaudu 4+ aasta andmetest, kust on eemaldatud kõik isikuandmed, ehk tegemist on anonüümitud andmega.
 
 ## Eesmärk
 
@@ -19,7 +19,7 @@ Eesmärgiks on uurida ja teostada järgmised toimingud:
 - Hüpotees: suitsetamine mõjutab keskmiselt sünnikaalu
 
 ## Andmestik.
-Andmestik sisaldab algselt ja puhastamata kujul kokku 48559 kirjet, puhastatud andmestik sisaldab 47262 kirjet.
+Andmestik sisaldas algselt ja puhastamata kujul kokku 48559 kirjet, puhastatud andmestik sisaldab 47262 kirjet.
 
 ## Andmestiku struktuur
 
@@ -55,7 +55,7 @@ Keskmine raseduskestus on 277 ja mediaan 279 päeva. Standardhälve on 12,56, ja
 ## Seoste uurimine.
 - Numbriliste väärtuste paarikaupa võrdlusgraafik.
 <p align="center">
-  <img src="images/Võrdlus, numbriliste tunnuste paarikaupa seosed.png" width="70%">
+  <img src="images/Võrdlus, numbriliste tunnuste paarikaupa seosed.png" width="90%">
   <br>
 </p>
 
@@ -69,6 +69,11 @@ Keskmine raseduskestus on 277 ja mediaan 279 päeva. Standardhälve on 12,56, ja
 Sündide sooline jaotus:
 
 Sünnitusviiside ja sünnikaalude suhted, mediaanväärtustega:
+<p align="center">
+  <img src="images/Sünnikaalu ja sünniviisi vaheline suhe.png" width="70%">
+  <br>
+  <em>Sünnikaalu ja sünniviisi vaheline suhe</em>
+</p>
 
 ## Sünnikaalu sõltuvus suitsetamisest. Hüpoteesi tõestus.
 Sünnikaalu sõltuvus suitsetamisest tuleb andmestiku analüüsides kenasti välja. Kui võrrelda sünnikaalu mediaanväärtusi mittesuitsetajate ja suitsetajate puhul, siis mittesuitsetajatel on see 3570g ja suitsetajatel 3438g. Vahe 132g.
@@ -77,6 +82,7 @@ Kui võrrelda keskmiseid sünnikaale, siis erinevus on veelgi suurem, keskmine s
   <img src="images/Võrdlus, sünnikaalu sõltuvus suitsetamisest, mediaanid.png" width="45%" />
   <img src="images/Võrdlus, sünnikaalu sõltuvus suitsetamisest, keskmised.png" width="45%" />
 </p>
+
 ## Masinõpe ja mudelite treenimine 
 Andmestikuga tutvumise järel langes otsus esmalt Random Forest(suvamets) kasuks. Hinnates Random Forestiga saavutatud tulemusi tekkis plaan treenida alternatiivne mudel, kasutades Gradient Boosting’ut(gradiendi võimendus), võrrelda mõlemat mudelit ja leida antud juhul parim.
 Treeningul kasutatavad tunnused.
