@@ -50,7 +50,7 @@ Suhe on ligikaudu 51,3% poisse ja 48,7% tüdrukuid (ligikaudu 105 poissi 100 tü
 Keskmine sünnipikkus on 50,87 ja mediaan 51. Standardhälve on 2,70, jaotus on üsna normaalne, jäädes ligikaudu 51 ümber, ehk varieeruvus on väike. Kvartiilidest 25% on 50 ja 75% 52.
 
 ## Sündide andmed
-Keskmine raseduskestus on 277 ja mediaan 279. Standardhälve on 12,56, jaotus on normaalse lähedane, kuid veidi vasakule kaldu, millele viitab keskmisest suurem mediaan. Kvartiilidest 25% on 273 ja 75% on 285, ehk poolte raseduskestus jääb siia, suhteliselt kitsasse 12 päeva, vahemikku. Äärmustest, miinimum on 154 ja maksimum on 304.
+Keskmine raseduskestus on 277 ja mediaan 279 päeva. Standardhälve on 12,56, jaotus on normaalse lähedane, kuid veidi vasakule kaldu, millele viitab keskmisest suurem mediaan. Kvartiilidest 25% on 273 ja 75% on 285, ehk poolte raseduskestus jääb siia, suhteliselt kitsasse 12 päeva, vahemikku. Äärmustest, miinimum on 154 ja maksimum on 304.
 
 ## Seoste uurimine.
 - Numbrilised väärtuste paarikaupa võrdlusgraafik.
