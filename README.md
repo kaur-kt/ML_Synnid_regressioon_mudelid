@@ -18,11 +18,10 @@ Eesmärgiks on uurida ja teostada järgmised toimingud:
 - Luua lisaks üks või mitu alternatiivse meetodiga masinõppe mudelit ning võrrelda mudelid omavahel
 - Hüpotees: suitsetamine mõjutab keskmiselt sünnikaalu
 
-## Andmestik.
+## Andmestiku puhastus
 Andmestik sisaldas algselt ja puhastamata kujul kokku 48559 kirjet, puhastatud andmestik sisaldab 47262 kirjet.
-
+ 
 ## Andmestiku struktuur
-
 Andmestruktuur koosneb järgmistest elementidest/väljadest:
 
 - ema perekonnaseis (kood) – kategooriline
@@ -171,7 +170,7 @@ Mudeli mõõdikud:
 - RMSE: 416,79
 - R2: 0,443
 
-Siit joonistub välja selge probleem sünnikaalu ennustamisel lühemate rasedu##kestvuste juures. Kui pikemate raseduskestuste juures mudel üldistab paremini , kui tuunimata mudel, siis probleem on lühemate raseduskestuste korral. Graafikul tumepunasega märgitud alas mudel „hallutsioneerib“ ja sellist mudelit reaalsuses kasutada ei saa.
+Siit joonistub välja selge probleem sünnikaalu ennustamisel lühemate raseduskestvuste juures. Kui pikemate raseduskestuste juures mudel üldistab paremini , kui tuunimata mudel, siis probleem on lühemate raseduskestuste korral. Graafikul tumepunasega märgitud alas mudel „hallutsioneerib“ ja sellist mudelit reaalsuses kasutada ei saa.
 ## Kokkuvõte.
 Andmestik sai puhastatud ja korralikult analüüsitud. Loodud sai kahel erineval meetodil põhinev masinõppe mudel, Random Forest ja Gradient Boosting meetodil vastavalt. Random Forest mudeli tuunimise tulemusel RMSE tunnused justkui paranesid, kuid mudel ei ennustanud sünnikaalu osaliselt õigesti ja seda mudelit kasutada ei saa. Plaan koostada ka kolmas mudel, mis põhineks närvivõrgul jäi ajapuudusel pooleli. Viimase puhul tekkis omapärane probleem sellega, et soovitud Tensorflow paketti ei õnnestunud, teatud tehnilistel põhjustel, kasutada ja PyTorch’i baasil implementatsioon võttis minu viimase vähesema kogemuse tõttu, oodatust rohkem aega. 
 
